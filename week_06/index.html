@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ford Landing Page</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+            .hero {
+                width: 100%;
+                max-width: 1920px;
+                max-height: 1080px;
+                height: 100vh;
+                margin: 0 auto;
+                padding-top: 69px;
+                padding-left: 50px;
+                padding-right: 53px;
+                padding-bottom: 55px;
+                background-image: url(images/HeroBckgrnd.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                /* background-color: brown; */
+                display: flex;
+                flex-direction: column;
+                font-family: 'Bebas Neue', sans-serif;
+                /* font-weight: 700; */
+                color: white;
+            }
+            .heroheader a {
+                text-decoration: none;
+                color: white;
+                font-size: 13pt;
+                opacity: 50%;
+            }
+
+            .heroheader a:hover {
+                opacity: 100%;
+            }
+
+            .heroheader {
+                flex: 1;
+                display: flex;
+                width: 100%;
+                max-width: 1820px;
+                margin: 0 auto;
+                max-height: 33px;
+                /* background-color: blue; */
+                justify-content: center;
+                padding-right: 20px;
+
+            }
+
+            .navbar {
+                flex: 3;
+                display: flex;
+                min-width: 0px;
+                justify-content: flex-start;
+                align-items: center;
+                /* background-color: aqua; */
+            }
+
+            .homebutton {
+                max-width: 88px;
+                opacity: 100%;
+                /* border: 1px solid red; */
+            }
+
+            .homebutton a {
+                opacity: 100%;
+            }
+
+            .homebutton img {
+                display: block;
+                min-width: 88px;
+                height: auto;
+            }
+
+            .fillheader {
+                flex: 1;
+                min-width: 0px;
+                /* background-color: azure; */
+            }
+
+            .cusnavbar{
+                flex: 2;
+                display: flex;
+                min-width: 0px;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .cusnavbar img {
+                display: block;
+                min-width: 20px;
+                height: auto;
+            }
+
+
+            .navlinks {
+                display: flex;
+                gap: 63px;
+                list-style: none;
+                align-items: center;
+                /* font-size: 13pt; */
+                /* background-color: aqua; */
+            }
+
+            .cusnavlinks {
+                /* background-color: blueviolet; */
+                display: flex;
+                gap: 24px;
+                list-style: none;
+                /* font-size: 13pt; */
+            }
+      
+            .heroheader a {
+                text-decoration: none;
+                 display: flex;
+                align-items: center;
+                gap: 8px;
+                white-space: nowrap;
+            }
+
+            .fillhero {
+                flex: 4;
+                min-width: 0pX;
+                min-height: 0px;
+                /* max-height: 644px; */
+                /* background-color: coral; */
+            }
+
+            .herohighlight {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                max-height: 279px;
+                max-width: 350px;
+                gap: 30px;
+                padding-left: 50px;
+            }
+
+            .highlighttext {
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+            }
+            
+            .highlighttext h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 74pt;
+                line-height: 1;
+            }
+            .highlighttext h2 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 34pt;
+                line-height: 1;
+            }
+
+            .highlighttext a {
+                color: white;
+                font-size: 16pt;
+            }
+
+            .highlightbtns {
+                flex: 2;
+                display: flex;
+                flex-direction: row;
+                gap: 25px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btncontainer {
+                flex: 3;
+                min-width: 160px;
+            }
+
+            .btncontainer a {
+                text-decoration: none;
+                
+            }
+
+
+            .btnleft {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                border-radius: 30px;
+                width: 100%;
+                min-height: 41px;
+                box-sizing: border-box;
+                /* padding: 10px 20px; */
+                color: black;
+                transition: transform 0.2s ease;
+
+            }
+
+            .btnleft:hover {
+                background-color: transparent;
+                border: 1px solid white;
+                color: white;
+                transform: scale(1.1);
+            }
+            
+            .btnright {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 30px;
+                border: 1px solid white;
+                width: 100%;
+                min-height: 41px;
+                box-sizing: border-box;
+                padding: 10px 20px;
+                color: white;
+                transition: transform 0.2s ease;
+            }
+
+            .btnright:hover {
+                background-color: white;
+                color: black;
+                transform: scale(1.1);
+            }
+
+        </style>
+
+
+
+    </head>
+    <body>
+        <div class="hero">
+
+            <header class="heroheader">
+            <nav class="navbar">
+                <ul class="navlinks">
+                    <li class="homebutton"><a href=""><img src="images/FordOval.svg" alt="FordLogo"></a></li>
+                    <li><a href="">VEHICLES</a></li>
+                    <li><a href="">SHOP</a></li>
+                    <li><a href="">SUPPORT & SERVICE</a></li>
+                    <li><a href="">FORD PRO SOLUTIONS</a></li>
+                </ul>
+            </nav>
+
+            <div class="fillheader">
+
+            </div>
+            <nav class="cusnavbar">
+                <ul class="cusnavlinks">
+                    <li><a href=""><img src="images/search-v2-white.svg" alt="Search"></a></li>
+                    <li><a href=""><img src="images/location-outline-v2-white.svg" alt="DealerLocation">LOCATE DEALER</a></li>
+                    <li><a href=""><img src="images/account-outline-v2-white.svg" alt="Account"></a></li>
+                    <li><a href=""><img src="images/globe-v2-white.svg" alt="Globe"></a></li>
+                </ul>
+            </nav>
+            </header>
+
+            <div class="fillhero">
+
+            </div>
+
+            <div class="herohighlight">
+                <div class="highlighttext">
+                    <h2>2026</h2>
+                    <h1>ESCAPE®</h1>
+                    <h2>STARTING AT $30,350</h2>
+                    <a href="">DETAILS</a>
+                </div>
+                <div class="highlightbtns">
+                    <div class="btncontainer">
+                        <a href="" class="btnleft">SEARCH INVENTORY</a>
+                    </div>
+                    <div class="btncontainer">
+                        <a href="" class="btnright">2025 ESCAPE</a>
+                    </div>
+                </div>
+            </div>
+       
+        </div>
+
+
+
+
+    </body>
+</html>

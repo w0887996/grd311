@@ -12,33 +12,37 @@
             body {
                 margin: 0;
                 padding: 0;
-                /* background-image: url(images/HeroBckgrnd.png);
-                                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                max-width: 1920px;
-                max-height: 1080px; */
+                display: flex;
+                flex-direction: column;
+                font-family: 'Bebas Neue', sans-serif;
+                font-weight: 400;
             }
+
+            main {
+                padding: 0;
+                width: 100%;
+                max-width: 1920px;
+                min-height: 2160px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
             .hero {
+                flex: auto;
                 width: 100%;
                 max-width: 1920px;
                 max-height: 1080px;
                 height: 100vh;
                 margin: 0 auto;
                 margin-top: 0;
-                padding-top: 69px;
-                padding-left: 50px;
-                padding-right: 53px;
-                padding-bottom: 55px;
-                background-image: url(images/HeroBckgrnd.png);
+                background-image: url(images/HeroBckgrnd);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
-                /* background-color: brown; */
                 display: flex;
                 flex-direction: column;
-                font-family: 'Bebas Neue', sans-serif;
-                /* font-weight: 700; */
                 color: white;
             }
             .heroheader a {
@@ -60,8 +64,10 @@
                 margin: 0 auto;
                 max-height: 33px;
                 /* background-color: blue; */
-                justify-content: center;
-                padding-right: 20px;
+                justify-content: flex-start;
+                padding-right: 50px;
+                padding-top: 69px; 
+                padding-left: 50px;
 
             }
 
@@ -102,6 +108,7 @@
                 min-width: 0px;
                 justify-content: flex-end;
                 align-items: center;
+                padding-right: 24px;
             }
 
             .cusnavbar img {
@@ -151,7 +158,8 @@
                 max-height: 279px;
                 max-width: 350px;
                 gap: 30px;
-                padding-left: 50px;
+                padding-left: 105px;
+                padding-bottom: 50px;
             }
 
             .highlighttext {
@@ -164,13 +172,15 @@
             .highlighttext h1 {
                 margin-top: 0;
                 margin-bottom: 0;
-                font-size: 74pt;
+                font-size: 60pt;
+                font-weight: 400;
                 line-height: 1;
             }
             .highlighttext h2 {
                 margin-top: 0;
                 margin-bottom: 0;
-                font-size: 34pt;
+                font-size: 25pt;
+                font-weight: 400;
                 line-height: 1;
             }
 
@@ -180,7 +190,7 @@
 
             .highlighttext a {
                 color: white;
-                font-size: 16pt;
+                font-size: 12pt;
             }
 
             .highlightbtns {
@@ -245,63 +255,315 @@
                 transform: scale(1.1);
             }
 
+            .fillmain {
+                margin: 0 auto;
+                max-height: 136px;
+                min-height: 0; 
+                /* background-color: brown; */
+                width: 100%;
+                max-width: 1920px;
+                flex: auto;
+            }
+
+            .ftrr {
+                /* background-color: blueviolet; */
+                width: 100%;
+                max-width: 1920px;
+                height: 927px;
+                margin: 0 ;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 20px;
+            }
+
+            .ftrr sup {
+                font-size: 0.5em;
+            }
+
+            .ftrr h1 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 50pt;
+                font-weight: 400;
+                line-height: 1;
+            }
+            .ftrr h2 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 25pt;
+                font-weight: 400;
+                line-height: 1;
+            }
+
+            .ftrrtitle {
+                flex: 1;
+                max-width: 810px;
+                max-height: 101px;
+                padding-left: 160px;
+            }
+
+            .ftrrdisplay {
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0 auto;
+                padding: 0;
+                background-image: url(images/find-the-right-ride_bg.png);
+                background-size: contain;
+                background-position: top;
+                background-repeat: no-repeat;
+                /* background-color: aqua; */
+                justify-content: center;
+                align-items: center;
+            }
+
+            .fillftrr {
+                flex:2;
+                min-width: 0pX;
+                min-height: 0px;                
+            }
+
+            .jellybag {
+                margin: 0 auto;
+                width: 100%;
+                flex: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 150px;
+                /* padding-top: 215px; */
+                /* padding-left: 105px; */
+            }
+
+            .ftrrdisplay h1 {
+                font-size: 25pt;
+                line-height: 1;
+            }
+
+            .ftrrdisplay h2 {
+                font-size: 14pt;
+                line-height: 1;
+            }
+
+            .jellybean {
+                max-width: 320px;
+                max-height: 567px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .jellybeaninfo {
+                width: 100%;
+                height: 372px;
+                background-color: lightgrey;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .jellybean img {
+                max-width: 300px;
+            }
+
+            .jellybeantext {
+                margin: 20px;
+                margin-top: 37px;
+                margin-bottom: 37px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+            .jellybeantext ul {
+                list-style-position: inside;
+                margin: 0;
+                padding: 0;
+                padding-top: 40px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding-bottom: 56px;
+
+            }
+
+            .jellybeanbtn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                background-color: #0276b3;
+                width: 160px;
+                border-radius: 30px;
+            }
+            .jellybeanbtn a {
+                margin: 0 auto;
+                color: white;
+                text-decoration: none;
+                
+            }
+
         </style>
 
 
 
     </head>
     <body>
-        <div class="hero">
 
-            <header class="heroheader">
-            <nav class="navbar">
-                <ul class="navlinks">
-                    <li class="homebutton"><a href=""><img src="images/FordOval.svg" alt="FordLogo"></a></li>
-                    <li><a href="">VEHICLES</a></li>
-                    <li><a href="">SHOP</a></li>
-                    <li><a href="">SUPPORT & SERVICE</a></li>
-                    <li><a href="">FORD PRO SOLUTIONS</a></li>
-                </ul>
-            </nav>
+        <main>
+            <section class="hero">
 
-            <div class="fillheader">
+                <header class="heroheader">
+                    <nav class="navbar">
+                        <ul class="navlinks">
+                            <li class="homebutton"><a href=""><img src="images/FordOval.svg" alt="FordLogo"></a></li>
+                            <li><a href="">VEHICLES</a></li>
+                            <li><a href="">SHOP</a></li>
+                            <li><a href="">SUPPORT & SERVICE</a></li>
+                            <li><a href="">FORD PRO SOLUTIONS</a></li>
+                        </ul>
+                    </nav>
 
-            </div>
-            <nav class="cusnavbar">
-                <ul class="cusnavlinks">
-                    <li><a href=""><img src="images/search-v2-white.svg" alt="Search"></a></li>
-                    <li><a href=""><img src="images/location-outline-v2-white.svg" alt="DealerLocation">LOCATE DEALER</a></li>
-                    <li><a href=""><img src="images/account-outline-v2-white.svg" alt="Account"></a></li>
-                    <li><a href=""><img src="images/globe-v2-white.svg" alt="Globe"></a></li>
-                </ul>
-            </nav>
-            </header>
+                    <div class="fillheader"></div>
+                    <nav class="cusnavbar">
+                        <ul class="cusnavlinks">
+                            <li><a href=""><img src="images/search-v2-white.svg" alt="Search"></a></li>
+                            <li><a href=""><img src="images/location-outline-v2-white.svg" alt="DealerLocation">LOCATE DEALER</a></li>
+                            <li><a href=""><img src="images/account-outline-v2-white.svg" alt="Account"></a></li>
+                            <li><a href=""><img src="images/globe-v2-white.svg" alt="Globe"></a></li>
+                        </ul>
+                    </nav>
+                </header>
 
-            <div class="fillhero">
+                <div class="fillhero"></div>
 
-            </div>
-
-            <div class="herohighlight">
-                <div class="highlighttext">
-                    <h2>2026</h2>
-                    <h1>ESCAPE<sup>®</sup></h1>
-                    <h2>STARTING AT $30,350</h2>
-                    <a href="">DETAILS</a>
-                </div>
-                <div class="highlightbtns">
-                    <div class="btncontainer">
-                        <a href="" class="btnleft">SEARCH INVENTORY</a>
+                <div class="herohighlight">
+                    <div class="highlighttext">
+                        <h2>2026</h2>
+                        <h1>ESCAPE<sup>®</sup></h1>
+                        <h2>STARTING AT $30,350</h2>
+                        <a href="">DETAILS</a>
                     </div>
-                    <div class="btncontainer">
-                        <a href="" class="btnright">2025 ESCAPE</a>
+                    <div class="highlightbtns">
+                        <div class="btncontainer">
+                            <a href="" class="btnleft">SEARCH INVENTORY</a>
+                        </div>
+                        <div class="btncontainer">
+                            <a href="" class="btnright">2025 ESCAPE</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-       
-        </div>
+            </section>
 
+            <section class="fillmain"></section>
 
+            <section class="ftrr">
+                <div class="ftrrtitle">
+                    <h1>FIND THE RIGHT RIDE FOR YOUR ROAD</h1>
+                    <h2>4 OPTIONS TO MAKE YOUR MOVE</h2>
+                </div>
+                <div class="ftrrdisplay">
+                        <div class="fillftrr"></div>
+                        <div class="jellybag">
+                            <article class="jellybean">
+                            <div class="jellybeancar">
+                                <img src="images/escape.png" alt="">
+                            </div>
+                            <div class="jellybeaninfo">
+                                <div class="jellybeantext">
+                                    <h1>Escape<sup>®</sup> Plug-in Hybrid</h1>
+                                    <h2>Starting at $35,400<sup>1</sup></h2>
+                                    <ul>
+                                        <li> 2.5L iVCT Atkinson Cycle I-4 hybrid engine</li>
+                                        <li>Standard Front-wheel drive</li>
+                                        <li>13.2" center display</li>
+                                        <li>101 EPA-EST. MPGe (COMBINED)</li>
+                                    </ul>
+                                    <div class="jellybeanbtn">
+                                        <a href="">BUILD & PRICE</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </article>
 
+                        <article class="jellybean">
+                            <div class="jellybeancar">
+                                <img src="images/escape_active.png" alt="">
+                            </div>
+                            <div class="jellybeaninfo">
+                                <div class="jellybeantext">
+                                    <h1>Escape Active<sup>®</sup></h1>
+                                    <h2>Starting at $30,350<sup>1</sup></h2>
+                                    <ul>
+                                        <li>2.5L iVCT Atkinson Cycle I-4 hybrid engine</li>
+                                        <li>Standard front-wheel drive</li>
+                                        <li>13.2" center display</li>
+                                        <li>101 EPA-est. MPGe (combined)</li>
+                                    </ul>
+                                    <div class="jellybeanbtn">
+                                        <a href="">BUILD & PRICE</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </article>
+
+                        <article class="jellybean">
+                            <div class="jellybeancar">
+                                <img src="images/escape_st.png" alt="">
+                            </div>
+                            <div class="jellybeaninfo">
+                                <div class="jellybeantext">
+                                    <h1>Escape<sup>®</sup> ST-Line</h1>
+                                    <h2>Starting at $31,195<sup>1</sup></h2>
+                                    <ul>
+                                        <li>2.5L iVCT Atkinson Cycle I-4 hybrid engine</li>
+                                        <li>Standard front-wheel drive</li>
+                                        <li>13.2" center display</li>
+                                        <li>101 EPA-est. MPGe (combined)</li>
+                                    </ul>
+                                    <div class="jellybeanbtn">
+                                        <a href="">BUILD & PRICE</a>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </article>
+
+                        <article class="jellybean">
+                            <div class="jellybeancar">
+                                <img src="images/escape_platinum.png" alt="">
+                            </div>
+                            <div class="jellybeaninfo">
+                                <div class="jellybeantext">
+                                    <h1>Escape<sup>®</sup> Platinum<sup>™</sup></h1>
+                                    <h2>Starting at $37,940<sup>1</sup></h2>
+                                    <ul>
+                                        <li>2.5L iVCT Atkinson Cycle I-4 hybrid engine</li>
+                                        <li>Standard front-wheel drive</li>
+                                        <li>13.2" center display</li>
+                                        <li>101 EPA-est. MPGe (combined)</li>
+                                    </ul>
+                                    <div class="jellybeanbtn">
+                                        <a href="">BUILD & PRICE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+
+            </section>
+
+        </main>
 
     </body>
 </html>
